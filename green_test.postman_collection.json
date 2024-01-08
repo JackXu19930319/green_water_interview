@@ -8,8 +8,11 @@
 	"item": [
 		{
 			"name": "127.0.0.1:5001/api/policyholders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -21,7 +24,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:5001/api/policyholders",
+					"raw": "127.0.0.1:5001/api/policyholders?code=000010",
 					"host": [
 						"127",
 						"0",
@@ -32,6 +35,12 @@
 					"path": [
 						"api",
 						"policyholders"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "000010"
+						}
 					]
 				}
 			},

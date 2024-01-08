@@ -41,7 +41,7 @@ def get_user(conn, path):
             _d['name'] = row[1]
             _d['registration_date'] = row[2]
             _d['introducer_code'] = row[3]
-            _d['path'] = path
+            # _d['path'] = path
     return _d
 
 
@@ -50,10 +50,9 @@ def test():
     return jsonify({'message': 'test'})
 
 
-@app.route('/api/policyholders', methods=['POST'])
+@app.route('/api/policyholders', methods=['GET'])
 def policyholders():
-    data = request.get_json()
-    code = data.get('code', None)
+    code = request.args.get('code', None)
     conn = psycopg2.connect(db_url)
     cur = conn.cursor()
     response_data = {}
