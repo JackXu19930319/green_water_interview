@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "24681794-d634-4093-a107-b77ba99ca256",
+		"name": "green_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11113104"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:5001/api/policyholders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\":\"000001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5001/api/policyholders",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"policyholders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5001/api/policyholders/000009/top",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5001/api/policyholders/000013/top",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"policyholders",
+						"000013",
+						"top"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "green-water-interview"
+version = "0.1.0"
+description = ""
+authors = ["JackXu19930319 <49975224+JackXu19930319@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "green_water_interview"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+gevent = "^23.9.1"
+flask = "^3.0.0"
+flask-cors = "^4.0.0"
+psycopg2-binary = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
